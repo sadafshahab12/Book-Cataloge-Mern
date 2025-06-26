@@ -12,7 +12,7 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("Welcome to Book catalog");
 });
-app.use("/api", bookRouter);
+app.use("/api", bookRouter); //   /api/book
 
 app.listen(PORT, () => {
   console.log(`Server is running on port http://localhost:${PORT}`);
